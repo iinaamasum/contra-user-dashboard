@@ -13,7 +13,7 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
   const navLinks = [
-    { id: 1, path: '/', name: 'Discover' },
+    // { id: 1, path: '/', name: 'Discover' },
     { id: 2, path: '/projects', name: 'Projects' },
     { id: 3, path: '/opportunities', name: 'Opportunities' },
   ];
@@ -28,12 +28,29 @@ const Navbar = () => {
       <div className="flex items-center justify-between h-full max-w-[1440px] mx-auto px-[30px]">
         <div className="flex items-center">
           <Link to="/">
-            <img className="h-[30px] w-[160px]" src={logo} alt="" />
+            <img className="h-[30px] w-[160px] mr-5" src={logo} alt="" />
           </Link>
           <div className="hidden lg:flex">
             <ul className="flex items-center p-0 text-textColor font-semibold text-base">
+              <li className="mx-4">
+                <NavLink
+                  to="/"
+                  className="hover:text-black transition-all duration-150"
+                >
+                  Discover
+                  <span
+                    style={{
+                      background:
+                        'linear-gradient(270deg, rgb(255, 158, 49) 12.52%, rgb(255, 90, 94) 91.19%)',
+                    }}
+                    className="mx-2 py-[3px] px-[8px] rounded-xl text-white"
+                  >
+                    Beta
+                  </span>
+                </NavLink>
+              </li>
               {navLinks.map((link) => (
-                <li key={link.id} className="ml-[32px]">
+                <li key={link.id} className="mx-4">
                   <NavLink
                     to={link.path}
                     className="hover:text-black transition-all duration-150"
