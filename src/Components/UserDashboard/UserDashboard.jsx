@@ -8,7 +8,7 @@ const UserDashboard = () => {
       style={{
         background: '#fff',
       }}
-      className="flex justify-center text-2xl gap-x-[72px]"
+      className="flex justify-center gap-x-[72px]"
     >
       <DashboardLeft />
       <DashboardRight />
