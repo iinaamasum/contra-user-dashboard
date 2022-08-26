@@ -65,16 +65,16 @@ const Navbar = () => {
 
         <div className="flex text-textColor">
           <p className="lg:block hidden">
-            <button className="inline-flex items-center gap-x-2 px-5 h-[48px] rounded-full border-[1px] mr-[8px] hover:bg-[#f6f6f6] hover:text-black transition-all duration-150">
+            <button className="inline-flex items-center gap-x-2 px-5 h-[48px] rounded-full border-[1px] mr-[8px] hover:bg-primaryWhite hover:text-black transition-all duration-150">
               <RiWalletLine size={30} className="text-gray-700" /> $0.00
             </button>
-            <button className="p-2 hover:bg-[#f6f6f6] rounded-full mr-[4px]">
+            <button className="p-2 hover:bg-primaryWhite rounded-full mr-[4px]">
               <BiMessageRoundedDots size={30} className="text-gray-700" />
             </button>
-            <button className="p-2 hover:bg-[#f6f6f6] rounded-full mr-[8px]">
+            <button className="p-2 hover:bg-primaryWhite rounded-full mr-[8px]">
               <BsBell size={30} className="text-gray-700" />
             </button>
-            <button className="inline-flex items-center gap-x-2 px-2 py-2 hover:bg-[#f6f6f6] rounded-xl h-[48px] border-[1px] hover:text-black transition-all duration-150">
+            <button className="inline-flex items-center gap-x-2 px-2 py-2 hover:bg-primaryWhite rounded-xl h-[48px] border-[1px] hover:text-black transition-all duration-150">
               <img
                 src={userImg}
                 alt=""

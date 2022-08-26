@@ -1,19 +1,17 @@
 import React from 'react';
+import DashboardLeft from './DashboardLeft';
+import DashboardRight from './DashboardRight';
 
 const UserDashboard = () => {
   return (
     <div
       style={{
-        background: '#f7f7f7',
+        background: '#fff',
       }}
-      className="h-screen flex justify-between text-2xl"
+      className="flex justify-center text-2xl gap-x-[72px]"
     >
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores
-        voluptatem quasi dolor velit harum animi hic distinctio rerum. Soluta
-        doloribus omnis cumque quo aliquam distinctio dolorem ducimus quisquam
-        expedita.
-      </p>
+      <DashboardLeft />
+      <DashboardRight />
     </div>
   );
 };
