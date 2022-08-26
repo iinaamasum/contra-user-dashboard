@@ -1548,11 +1548,6 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@popperjs/core@^2.11.2":
-  version "2.11.6"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
-  integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
-
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
@@ -7040,13 +7035,6 @@ postcss@^8.3.5, postcss@^8.4.14, postcss@^8.4.16, postcss@^8.4.4, postcss@^8.4.7
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-preline@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/preline/-/preline-1.1.2.tgz#cee0a4872e5eed13d4cc4a85d4cd95f354567448"
-  integrity sha512-oUlzaQHxuLqwXCvuJ/OwMtXUdtdOHgHjbf/BOh2QwbCABweo4e5dEwEFWP7uMEYZuH2v6Qf0QZsRx11iEtBBCw==
-  dependencies:
-    "@popperjs/core" "^2.11.2"
-
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -7247,6 +7235,11 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
+react-icons@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.4.0.tgz#a13a8a20c254854e1ec9aecef28a95cdf24ef703"
+  integrity sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -7267,7 +7260,7 @@ react-refresh@^0.11.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
-react-router-dom@6:
+react-router-dom@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.3.0.tgz#a0216da813454e521905b5fa55e0e5176123f43d"
   integrity sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==
