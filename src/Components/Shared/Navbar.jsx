@@ -21,7 +21,7 @@ const Navbar = () => {
       style={{
         boxShadow: 'rgb(228 232 247 / 40%) 0px 0px 80px',
       }}
-      className="sticky top-0 z-50 h-[83px] backdrop-blur-[24px] bg-transparent
+      className="sticky top-0 z-50 h-[83px] backdrop-blur-[8px] bg-[rgba(255,255,255,0.86)]
       "
     >
       <div className="flex items-center justify-between h-full max-w-[1440px] mx-auto px-[30px]">
