@@ -10,7 +10,7 @@ import {
   FaXbox,
 } from 'react-icons/fa';
 import { GoLocation } from 'react-icons/go';
-import userImg from '../../Assets/logo/user.png';
+import userImg from '../../Assets/image/userImg.png';
 import './DashboardLeft.css';
 
 const DashboardLeft = () => {
@@ -30,15 +30,19 @@ const DashboardLeft = () => {
       <div className="w-[364px] flex flex-col items-center justify-center">
         {/* profile image  */}
         <div className="w-[210px] h-[210px] rounded-full bg-black">
-          <img className="h-full w-full object-fill" src={userImg} alt="" />
+          <img
+            className="h-full w-full object-fill rounded-full"
+            src={userImg}
+            alt=""
+          />
         </div>
         {/* name and profession  */}
-        <div className="hover:bg-primaryWhite w-full py-3 flex items-center justify-center rounded-lg mt-2">
+        <div className="hover:bg-grayWhite w-full py-3 flex items-center justify-center rounded-lg my-3 cursor-pointer">
           <h2 className="name__text__gradient">Md. Masum Mia</h2>
           <BiBadgeCheck size={30} className="ml-1 text-gray-400" />
         </div>
         <div className="mt-1">
-          <button className="bd-white py-3 px-8 rounded-full border-[2px] border-btnColor text-base font-semibold hover:bg-primaryWhite">
+          <button className="bd-white py-3 px-8 rounded-full border-[2px] border-btnColor text-base font-semibold hover:bg-grayWhite">
             Verify Your Identity
           </button>
         </div>
@@ -61,7 +65,7 @@ const DashboardLeft = () => {
             <FaTelegramPlane size={25} color="" />
             Get In Touch
           </button>
-          <button className="w-[13%] border-[1px] border-btnColor p-[6px] rounded-full flex items-center justify-center hover:bg-[#f2f2f2]">
+          <button className="w-[13%] border-[1px] border-btnColor p-[6px] rounded-full flex items-center justify-center hover:bg-grayWhite">
             <AiOutlineHeart size={35} className="" />
           </button>
         </div>

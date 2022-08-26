@@ -4,9 +4,11 @@ import DashboardRight from './DashboardRight';
 
 const UserDashboard = () => {
   return (
-    <div className="flex justify-center gap-x-[72px] bg-primaryWhite">
-      <DashboardLeft />
-      <DashboardRight />
+    <div className="bg-primaryWhite min-h-screen">
+      <div className="flex justify-center gap-x-[72px]">
+        <DashboardLeft />
+        <DashboardRight />
+      </div>
     </div>
   );
 };

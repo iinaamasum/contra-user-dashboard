@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       colors: {
         primaryWhite: '#F6F6F6',
-        SecondaryWhite: '#FFFFFF',
+        secondaryWhite: '#FFFFFF',
+        grayWhite: '#f2f2f2',
         black: '#131313',
         textColor: '#6B6B6D',
         textColor_1: '#585858de',
@@ -18,6 +19,7 @@ module.exports = {
       md: '768px',
       mdLg800: '850px',
       lg: '1024px',
+      lg1200: '1200px',
       xl: '1280px',
       '2xl': '1536px',
     },

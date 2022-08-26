@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineEyeInvisible } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import UserProjectsCard from './UserProjectsCard';
 
 const DashboardRight = () => {
   const userExpNav = [
@@ -46,6 +47,8 @@ const DashboardRight = () => {
             profile setup checklist.
           </p>
         </div>
+        {/* projects card  */}
+        <UserProjectsCard />
       </div>
     </div>
   );
