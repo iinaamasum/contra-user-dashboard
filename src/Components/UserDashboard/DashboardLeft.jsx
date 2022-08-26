@@ -1,11 +1,12 @@
 import React from 'react';
-import { AiFillMessage } from 'react-icons/ai';
+import { AiOutlineHeart } from 'react-icons/ai';
 import { BiBadgeCheck, BiLinkExternal } from 'react-icons/bi';
 import {
   FaBehance,
   FaFacebook,
   FaGithub,
   FaInstagram,
+  FaTelegramPlane,
   FaXbox,
 } from 'react-icons/fa';
 import { GoLocation } from 'react-icons/go';
@@ -36,7 +37,7 @@ const DashboardLeft = () => {
           <BiBadgeCheck size={30} className="ml-1 text-gray-400" />
         </div>
         <div className="mt-1">
-          <button className="bd-white py-3 px-8 rounded-full border-[2px] border-[#f2c94c] text-base font-semibold hover:bg-primaryWhite">
+          <button className="bd-white py-3 px-8 rounded-full border-[2px] border-btnColor text-base font-semibold hover:bg-primaryWhite">
             Verify Your Identity
           </button>
         </div>
@@ -54,10 +55,19 @@ const DashboardLeft = () => {
           ))}
         </div>
         {/* message btn  */}
-        <div className="mt-5 w-full">
-          <button className="inline-flex items-center justify-center w-full bg-black hover:bg-gray-700 text-primaryWhite font-semibold gap-x-1 py-[10px] rounded-full text-lg">
-            <AiFillMessage size={25} color="" />
-            Work With Me
+        <div className="mt-5 w-full flex items-center justify-between">
+          <button
+            style={{
+              backgroundImage:
+                'linear-gradient(251.6deg,#FFAE53 27.89%, #f2c94c 84.47%)',
+            }}
+            className="inline-flex items-center justify-center text-black font-semibold gap-x-2 py-[10px] rounded-full text-lg w-[85%]"
+          >
+            <FaTelegramPlane size={25} color="" />
+            Get In Touch
+          </button>
+          <button className="w-[13%] border-[1px] border-btnColor p-[6px] rounded-full flex items-center justify-center hover:bg-primaryWhite">
+            <AiOutlineHeart size={35} className="" />
           </button>
         </div>
         {/* bio  */}

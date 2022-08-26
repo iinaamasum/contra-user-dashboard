@@ -20,10 +20,14 @@ const DashboardRight = () => {
           Web Service Provider at Affordable Price
         </span>
         {/* user exp nav  */}
-        <div className="">
+        <div className="border-b-4 border-white my-5 py-2">
           {userExpNav.map((item) => (
-            <Link className="mr-3" to={item.id} key={item.id}>
-              <span className="text-2xl text-[#f2c94c]">•</span>
+            <Link
+              className="mr-3 text-lg font-medium"
+              to={item.path}
+              key={item.id}
+            >
+              <span className="text-2xl text-[#f2c94c] mr-1">•</span>
               {item.title}
             </Link>
           ))}

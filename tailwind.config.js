@@ -10,6 +10,7 @@ module.exports = {
         textColor_1: '#585858de',
         textHighlight: '#5c5c5c',
         textDark: '#2e2e2eef',
+        btnColor: '#f2c94c',
       },
     },
     screens: {

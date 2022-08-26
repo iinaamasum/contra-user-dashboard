@@ -11,7 +11,6 @@ import userImg from '../../Assets/logo/user.png';
 const Navbar = () => {
   const navigate = useNavigate();
   const [navOpen, setNavOpen] = useState(false);
-  const [scrollNav, setScrollNav] = useState(false);
   const navLinks = [
     // { id: 1, path: '/', name: 'Discover' },
     { id: 2, path: '/projects', name: 'Projects' },
@@ -22,7 +21,7 @@ const Navbar = () => {
       style={{
         boxShadow: 'rgb(228 232 247 / 40%) 0px 0px 80px',
       }}
-      className="sticky top-0 z-50 h-[83px] shadow backdrop-blur-[13px] bg-transparent
+      className="sticky top-0 z-50 h-[83px] backdrop-blur-[24px] bg-transparent
       "
     >
       <div className="flex items-center justify-between h-full max-w-[1440px] mx-auto px-[30px]">
@@ -84,19 +83,21 @@ const Navbar = () => {
               <RiArrowDownSLine size={30} className="text-gray-700" />
             </button>
           </p>
-          <label className="btn btn-circle swap swap-rotate lg:hidden visible">
-            <input type="checkbox" />
-            <MdCloseFullscreen
-              onClick={() => setNavOpen(!navOpen)}
-              className={'swap-on fill-current'}
-              size={30}
-            />
-            <AiOutlineMenuUnfold
-              onClick={() => setNavOpen(!navOpen)}
-              className={'swap-off fill-current'}
-              size={30}
-            />
-          </label>
+          <div className="block lg:hidden">
+            {navOpen ? (
+              <MdCloseFullscreen
+                onClick={() => setNavOpen(!navOpen)}
+                className={'swap-on fill-current'}
+                size={30}
+              />
+            ) : (
+              <AiOutlineMenuUnfold
+                onClick={() => setNavOpen(!navOpen)}
+                className={'swap-off fill-current'}
+                size={30}
+              />
+            )}
+          </div>
         </div>
         <ul
           className={
