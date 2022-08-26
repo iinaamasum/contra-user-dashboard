@@ -4,12 +4,7 @@ import DashboardRight from './DashboardRight';
 
 const UserDashboard = () => {
   return (
-    <div
-      style={{
-        background: '#fff',
-      }}
-      className="flex justify-center gap-x-[72px]"
-    >
+    <div className="flex justify-center gap-x-[72px] bg-primaryWhite">
       <DashboardLeft />
       <DashboardRight />
     </div>

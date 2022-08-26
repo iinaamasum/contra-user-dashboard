@@ -4,12 +4,12 @@ import UserDashboard from './Components/UserDashboard/UserDashboard';
 
 function App() {
   return (
-    <>
+    <section>
       <Navbar />
       <Routes>
         <Route path="/" element={<UserDashboard />} />
       </Routes>
-    </>
+    </section>
   );
 }
 

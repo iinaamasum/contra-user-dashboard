@@ -62,7 +62,7 @@ const DashboardLeft = () => {
         </div>
         {/* bio  */}
         <div className="mt-6">
-          <p className="text-center text-textColor font-normal text-[17px]">
+          <p className="text-center text-gray-700 font-normal text-[17px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
             atque assumenda. Quod ipsum quidem eius molestias praesentium
             doloribus. Impedit obcaecati commodi dolores, adipisci, maxime nam
