@@ -1,0 +1,29 @@
+.name__text__gradient {
+  background-color: white;
+  background-image: radial-gradient(
+    189.37% 1750.88% at 1.77% 108.13%,
+    rgb(97, 166, 242) 1.56%,
+    rgb(143, 111, 219) 23.44%,
+    rgb(255, 90, 94) 33.12%,
+    rgb(242, 201, 76) 52%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.125rem;
+  font-weight: 700;
+}
+
+.get__started__btn__gradient {
+  background: linear-gradient(
+    251.6deg,
+    #ffae53 27.89%,
+    #f2c94c 84.47%
+  ) !important;
+  background-color: transparent;
+}
+
+.get__started__btn__gradient:hover {
+  background: #f2c94c !important;
+}

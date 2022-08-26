@@ -11,6 +11,7 @@ import {
 } from 'react-icons/fa';
 import { GoLocation } from 'react-icons/go';
 import userImg from '../../Assets/logo/user.png';
+import './DashboardLeft.css';
 
 const DashboardLeft = () => {
   const userProfession = [
@@ -56,17 +57,11 @@ const DashboardLeft = () => {
         </div>
         {/* message btn  */}
         <div className="mt-5 w-full flex items-center justify-between">
-          <button
-            style={{
-              backgroundImage:
-                'linear-gradient(251.6deg,#FFAE53 27.89%, #f2c94c 84.47%)',
-            }}
-            className="inline-flex items-center justify-center text-black font-semibold gap-x-2 py-[10px] rounded-full text-lg w-[85%]"
-          >
+          <button className="inline-flex items-center justify-center text-black font-semibold gap-x-2 py-[10px] rounded-full text-lg w-[85%] get__started__btn__gradient">
             <FaTelegramPlane size={25} color="" />
             Get In Touch
           </button>
-          <button className="w-[13%] border-[1px] border-btnColor p-[6px] rounded-full flex items-center justify-center hover:bg-primaryWhite">
+          <button className="w-[13%] border-[1px] border-btnColor p-[6px] rounded-full flex items-center justify-center hover:bg-[#f2f2f2]">
             <AiOutlineHeart size={35} className="" />
           </button>
         </div>
