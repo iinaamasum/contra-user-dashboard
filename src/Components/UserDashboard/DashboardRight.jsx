@@ -62,7 +62,7 @@ const DashboardRight = () => {
             {userExpNav.map((link) => (
               <li
                 key={link.id}
-                className="mr-2 xsm:mr-3 text-base md:text-lg font-medium py-2"
+                className="mr-2 xsm:mr-3 text-sm xsm:text-lg font-medium py-2"
               >
                 <NavLink
                   className={({ isActive }) =>
