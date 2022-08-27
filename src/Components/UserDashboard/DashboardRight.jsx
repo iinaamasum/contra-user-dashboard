@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineEyeInvisible } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import pro1 from '../../Assets/image/pro1.jpeg';
 import pro2 from '../../Assets/image/pro2.jpeg';
 import pro3 from '../../Assets/image/pro3.jpeg';
@@ -10,7 +10,7 @@ import UserProjectsCard from './UserProjectsCard';
 
 const DashboardRight = () => {
   const userExpNav = [
-    { id: 1, path: '/work-experience', title: 'Work Experience' },
+    { id: 1, path: '/', title: 'Work Experience' },
     { id: 2, path: '/calender', title: 'Calender' },
     { id: 3, path: '/my-feed', title: 'My Feed' },
   ];
@@ -52,7 +52,7 @@ const DashboardRight = () => {
     },
   ];
   return (
-    <div className="w-[750px] py-[30px] mt-[70px] flex justify-center rounded-2xl">
+    <div className="w-[750px] py-[30px] mt-[40px] flex justify-center rounded-2xl">
       <div className="">
         <span
           style={{
@@ -63,17 +63,22 @@ const DashboardRight = () => {
           Web Service Provider at Affordable Price
         </span>
         {/* user exp nav  */}
-        <div className="border-b-4 border-white my-5 py-2">
-          {userExpNav.map((item) => (
-            <Link
-              className="mr-3 text-lg font-medium"
-              to={item.path}
-              key={item.id}
-            >
-              <span className="text-2xl text-[#f2c94c] mr-1">•</span>
-              {item.title}
-            </Link>
-          ))}
+        <div className="my-5">
+          <ul className="flex items-center border-b-2 border-white">
+            {userExpNav.map((link) => (
+              <li key={link.id} className="mr-3 text-lg font-medium py-2">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? 'border-b-2 border-black py-[12px]' : ''
+                  }
+                  to={link.path}
+                >
+                  <span className="text-2xl text-[#f2c94c] mr-1">•</span>
+                  {link.title}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </div>
         {/* service alert */}
         <div className="w-full">
