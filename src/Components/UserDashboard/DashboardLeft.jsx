@@ -20,13 +20,7 @@ const DashboardLeft = () => {
     { id: 3, title: 'Web Developer' },
   ];
   return (
-    <div
-      style={{
-        background: 'rgba(255,255,255,0.43)',
-        boxShadow: 'rgb(228 232 247 / 40%) 0px 0px 80px',
-      }}
-      className="w-[515px] px-[32px] py-[92px] my-[40px] flex items-center justify-center rounded-2xl"
-    >
+    <div className="w-full lg1200:w-[515px] px-[10px] md:px-[32px] py-[30px] lg:py-[92px] my-[40px] flex items-center justify-center rounded-2xl dashboard__left__bg">
       <div className="w-[364px] flex flex-col items-center justify-center">
         {/* profile image  */}
         <div className="w-[210px] h-[210px] rounded-full bg-black">

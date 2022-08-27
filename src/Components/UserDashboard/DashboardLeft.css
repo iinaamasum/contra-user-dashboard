@@ -27,3 +27,15 @@
 .get__started__btn__gradient:hover {
   background: #f2c84cb9 !important;
 }
+
+.dashboard__left__bg {
+  background: rgba(255, 255, 255, 0.43);
+  box-shadow: rgb(228 232 247 / 40%) 0px 0px 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard__left__bg {
+    background: #f6f6f6;
+    box-shadow: none;
+  }
+}

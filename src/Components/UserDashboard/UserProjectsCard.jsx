@@ -4,11 +4,11 @@ const UserProjectsCard = ({ data }) => {
   const { title, description, img } = data;
 
   return (
-    <div className="lg1200:flex items-start justify-between p-[30px] bg-[#fff] my-[30px] rounded-2xl gap-x-[20px]">
-      <div className="h-[190px] w-full lg1200:w-[250px]">
+    <div className="w-full xsm:w-[320px] lg1200:w-full lg1200:flex items-start justify-between p-[15px] lg1200:p-[30px] bg-[#fff] rounded-2xl gap-x-[20px]">
+      <div className="h-[250] xsm:h-[190px] w-full lg1200:w-[250px]">
         <img className="h-full w-full rounded-xl" src={img} alt="" />
       </div>
-      <div className="w-full lg1200:w-[415px]">
+      <div className="w-full lg1200:w-[415px] mt-3 lg1200:mt-0">
         <h2
           style={{
             lineHeight: '2.5rem',

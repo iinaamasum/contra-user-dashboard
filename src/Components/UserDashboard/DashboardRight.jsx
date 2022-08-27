@@ -52,7 +52,7 @@ const DashboardRight = () => {
     },
   ];
   return (
-    <div className="w-[750px] py-[30px] mt-[40px] flex justify-center rounded-2xl">
+    <div className="w-full lg1200:w-[750px] px-[10px] py-[30px] mt-[40px] flex justify-center rounded-2xl">
       <div className="">
         <span
           style={{
@@ -66,7 +66,10 @@ const DashboardRight = () => {
         <div className="my-5">
           <ul className="flex items-center border-b-2 border-white">
             {userExpNav.map((link) => (
-              <li key={link.id} className="mr-3 text-lg font-medium py-2">
+              <li
+                key={link.id}
+                className="mr-3 text-base md:text-lg font-medium py-2"
+              >
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? 'border-b-2 border-black py-[12px]' : ''
@@ -95,7 +98,7 @@ const DashboardRight = () => {
           </p>
         </div>
         {/* projects card  */}
-        <div className="">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 mt-5">
           {projectsCardData.map((data) => (
             <UserProjectsCard key={data.id} data={data} />
           ))}
