@@ -1,5 +1,4 @@
 import React from 'react';
-import { AiOutlineEyeInvisible } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 import pro1 from '../../Assets/image/pro1.jpeg';
 import pro2 from '../../Assets/image/pro2.jpeg';
@@ -52,7 +51,7 @@ const DashboardRight = () => {
     },
   ];
   return (
-    <div className="w-full lg1200:w-[750px] px-4 py-[30px] mt-[40px] flex justify-center rounded-2xl">
+    <div className="w-full lg:w-[640px] lg1300:w-[750px] px-4 md:px-0 py-[30px] mt-[40px] flex justify-center rounded-2xl">
       <div className="">
         <h2 className="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-bold leading-[2rem] md:leading-[4rem]">
           Web Service Provider at Affordable Price
@@ -77,20 +76,6 @@ const DashboardRight = () => {
               </li>
             ))}
           </ul>
-        </div>
-        {/* service alert */}
-        <div className="w-full">
-          <p
-            style={{
-              background: '#fff',
-              boxShadow: 'rgb(228 232 247 / 40%) 0px 0px 80px',
-            }}
-            className="py-[14px] w-full rounded-2xl bg-white inline-flex items-center gap-x-3 px-3 text-textColor_1"
-          >
-            <AiOutlineEyeInvisible size={28} />
-            Your projects and services will go live once you complete your
-            profile setup checklist.
-          </p>
         </div>
         {/* projects card  */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 mt-5">
