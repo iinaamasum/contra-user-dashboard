@@ -21,7 +21,7 @@ const DashboardLeft = () => {
   ];
   return (
     <div className="w-full lg1200:w-[515px] px-[10px] md:px-[32px] py-[30px] lg:py-[92px] my-[40px] flex items-center justify-center rounded-2xl dashboard__left__bg">
-      <div className="w-[364px] flex flex-col items-center justify-center">
+      <div className="w-full sm:w-[364px] px-4 sm:px-0 flex flex-col items-center justify-center">
         {/* profile image  */}
         <div className="w-[210px] h-[210px] rounded-full bg-black">
           <img

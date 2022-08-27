@@ -52,23 +52,18 @@ const DashboardRight = () => {
     },
   ];
   return (
-    <div className="w-full lg1200:w-[750px] px-[10px] py-[30px] mt-[40px] flex justify-center rounded-2xl">
+    <div className="w-full lg1200:w-[750px] px-4 py-[30px] mt-[40px] flex justify-center rounded-2xl">
       <div className="">
-        <span
-          style={{
-            lineHeight: '4rem',
-          }}
-          className="text-3xl md:text-4xl lg:text-5xl font-bold"
-        >
+        <h2 className="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-bold leading-[2rem] md:leading-[4rem]">
           Web Service Provider at Affordable Price
-        </span>
+        </h2>
         {/* user exp nav  */}
         <div className="my-5">
           <ul className="flex items-center border-b-2 border-white">
             {userExpNav.map((link) => (
               <li
                 key={link.id}
-                className="mr-3 text-base md:text-lg font-medium py-2"
+                className="mr-2 xsm:mr-3 text-base md:text-lg font-medium py-2"
               >
                 <NavLink
                   className={({ isActive }) =>
