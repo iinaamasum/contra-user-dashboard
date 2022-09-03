@@ -80,7 +80,7 @@ const DashboardRight = () => {
           </ul>
         </div>
         {/* projects card  */}
-        <div className="flex justify-center">
+        <div className="flex justify-center w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 mt-5">
             {projectsCardData.map((data) => (
               <UserProjectsCard key={data.id} data={data} />

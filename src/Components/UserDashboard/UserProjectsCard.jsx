@@ -4,7 +4,7 @@ const UserProjectsCard = ({ data }) => {
   const { title, description, img } = data;
 
   return (
-    <div className="w-full xsm:w-[320px] lg1300:w-full lg1300:flex items-start justify-between p-[15px] lg1300:p-[30px] bg-[#fff] rounded-2xl gap-x-[20px]">
+    <div className="w-full xsm:w-[320px] lg:w-full overflow-hidden lg1300:w-full lg:flex items-start justify-between p-[15px] lg1300:p-[30px] bg-[#fff] rounded-2xl gap-x-[20px]">
       <div className="h-[250] xsm:h-[190px] w-full lg1300:w-[250px]">
         <img className="h-full w-full rounded-xl" src={img} alt="" />
       </div>
